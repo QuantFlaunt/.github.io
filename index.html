@@ -49,7 +49,7 @@
           </li>
 
           <li>
-            <a href="http://www.jamesanaipakos.com/number">Visualize</a>
+            <a href="#visualization">Visualize</a>
           </li>
 
           <li>
@@ -181,6 +181,7 @@
 
   <hr/>
 
+<!-- Who Uses Quant -->
    <div id="who">
    <div class="container">
     <div class="row mt centered">
@@ -229,9 +230,11 @@
     </div><!-- /row -->
   </div><!-- /container -->
   </div>
+<!-- /Who Uses Quant -->
 
   <hr/>
 
+<!-- Data -->
  <div id="data">
  <div class="container">
     <div class="row">
@@ -326,10 +329,11 @@
     </div><!-- /row -->
   </div><!-- /container -->
  <!-- /Add Activity -->
+<!--/Data -->
 
 <hr/>
-
- <div id="data">
+<!-- Visualization -->
+ <div id="visualize">
  <div class="container">
     <div class="row">
     <div class="row mt centered">
@@ -340,9 +344,9 @@
 
     <div class="row">
       <div style="float:left" class="col-md-2 col-md-offset-1">
-        <img alt="" class="img-circle" src="http://static.tumblr.com/w8z8jth/cnRneor2o/pic1.jpg" width="140">
+        <img alt="" class="img-circle" src="http://static.tumblr.com/w8z8jth/cnRneor2o/pic3.jpg" width="140">
 
-        <h4 style="text-align: center">John's Data</h4>
+        <h4 style="text-align: center">Angelica's Data</h4>
 
       </div><!--/col-lg-4 -->
 
@@ -357,6 +361,8 @@
   </div><!-- /container -->
 
   </div><!-- /container -->
+<!-- /Visualization -->
+
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -401,8 +407,7 @@ $(function () {
 </script>
 <!-- /Edit Button Alert-->
 
-<!-- /Chart -->
- <script><!-- /Chart -->
+<script><!--/Chart -->
           var brands = {},
                 brandsData = [],
                 versions = {},
@@ -459,10 +464,10 @@ $(function () {
 
 
                             },
-            text: '1',
+            text: '50',
             align: 'left',
-            y: 425,
-                    x: 375
+            y: 445,
+                    x: 345
             },
             tooltip: {
                 valueDecimals: 0,
@@ -470,14 +475,45 @@ $(function () {
 
             },
 
- 
+            drilldown:{
+                drillUpButton: {
+                relativeTo: 'spacingBox',
+                position: {
+                    y: 50,
+                    x: 0
+                            },
+                },
+
+        series: [{
+            id: 'Yelp',
+            name: 'Yelp',
+            data: [
+                ['Vintage', 50],
+                ['Bars', 50],
+            ]
+        } ]
+    },
+
+
       series: [{
         name: 'Identity',
         colorByPoint: true,
         data: [{
+            name: 'Yelp',
+            y: 25,
+            drilldown: 'Yelp'
+        }, {
+          name: 'Goodreads',
+            y: 25,
+
+        }, {
+            name: 'Ello',
+            y: 25,
+
+        }, {
             name: 'Quant',
-            y: 100,
-            
+            y: 25,
+
         }]
       }]
             });
