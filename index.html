@@ -8,25 +8,58 @@
   <link href="http://static.tumblr.com/w8z8jth/hxXnf5m7d/bootstrap.css" rel="stylesheet">
   <link href="http://static.tumblr.com/w8z8jth/asanf5m6y/main.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
+  <script src="http://static.tumblr.com/w8z8jth/NgCneoffg/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link href="http://static.tumblr.com/w8z8jth/BUDnf5m7n/bootstrap-editable.css" rel="stylesheet">
+  <script src="http://static.tumblr.com/w8z8jth/l5znf5m9e/bootstrap-editable.js"></script>
+  <script src="http://static.tumblr.com/w8z8jth/ifknf5nuw/bootstrap-edit.js"></script>
+
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/modules/data.js"></script>
+  <script src="http://code.highcharts.com/modules/drilldown.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
 </head>
 
 <body>
   <!-- Fixed navbar -->
-
   <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
         <button class="navbar-toggle" data-target=".navbar-collapse"
         data-toggle="collapse" type="button"><span class="icon-bar"></span>
         <span class="icon-bar"></span> <span class="icon-bar"></span></button>
-        <a class="navbar-brand" href="#" style="font-weight: bold">QUANTFLAUNT</a>
+        <a class="navbar-brand" href="http://quantflaunt.github.io" style="font-weight: bold">QUANTFLAUNT</a>
       </div>
 
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
+            <a href="http://www.jamesanaipakos.com/data">Your Data</a>
+          </li>
+
+          <li>
+            <a href="http://www.jamesanaipakos.com/number">Your Number</a>
+          </li>
+
+          <li>
+            <a data-target="#myModal" data-toggle="modal" href="#myModal">Your
+            Account</a>
+          </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">See Your Friends' Number <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.jamesanaipakos.com/number/john">John</a></li>
+            <li><a href="http://www.jamesanaipakos.com/number/angelica">Angelica</a></li>
+            <li><a href="http://www.jamesanaipakos.com/number/peter">Peter</a></li>
+          </ul>
+        </li>
+        <li>
             <a data-target="#myModal" data-toggle="modal" href=
-            "#myModal">Log n</a>
+            "#myModal">Log in</a>
           </li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -185,6 +218,85 @@
       </div><!--/col-lg-4 -->
     </div><!-- /row -->
   </div><!-- /container -->
+
+  <hr/>
+
+<div class="container">
+    <div class="row">
+    <div class="row mt centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <a title="" href="#" data-toggle="tooltip" data-placement="bottom" data-original-title="This table is editable!"><h1>Your Data</h1></a><br>
+      </div>
+
+    <div class="row mt centered">
+      <div style="float:left" class="col-lg-3">
+        <img alt="" class="img-circle" src="http://static.tumblr.com/w8z8jth/cnRneor2o/pic1.jpg" width="140">
+
+        <h4>John Roberts</h4>
+
+      
+      </div><!--/col-lg-4 -->
+
+<div id="user" class="col-lg-8 col-lg-offset-1">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Activity</th>
+
+              <th>Action</th>
+
+              <th>Value</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><a href="#" data-name="username" data-type="text" title="Activity" class="editable-click">Quant</a></td>
+
+              <td><a href="#" data-name="username" data-type="text" title="Action" class="editable-click">Signed up</a></td>
+
+              <td><a href="#" data-name="username" data-type="text" title="Value" class="editable-click">1</td>
+            </tr>
+
+            <tr>
+              <td><a href="#" data-name="username" data-type="text" title="Activity" class="editable-click">Behance</a></td>
+
+              <td><a href="#" data-name="username" data-type="text" title="Action" class="editable-click">Posted web application</td>
+
+              <td><a href="#" data-name="username" data-type="text" title="Value" class="editable-click">1</a></td>
+            </tr>
+
+            <tr>
+              <td><a href="#" data-name="username" data-type="text" title="Activity" class="editable-click">Yelp</a></td>
+
+              <td><a href="#" data-name="username" data-type="text" title="Action" class="editable-click">Reviewed restaurants</a></td>
+
+              <td><a href="#" data-name="username" data-type="text" title="Value" class="editable-click">10</a></td>
+            </tr>
+
+            <tr>
+              <td><a href="#" data-name="username" data-type="text" title="Activity" class="editable-click">Bodily Function</a></td>
+
+              <td><a href="#" data-name="username" data-type="text" title="Action" class="editable-click">Yawned</a></td>
+
+              <td><a href="#" data-name="username" data-type="text" title="Value" class="editable-click">45</a></td>
+            </tr>
+
+            <tr>
+              <td><a href="#" data-name="username" data-type="text" title="Activity" class="editable-click">Photography</a></td>
+
+              <td><a href="#" data-name="username" data-type="text" title="Action" class="editable-click">Took picture</a></td>
+
+              <td><a href="#" data-name="username" data-type="text" title="Value" class="editable-click">2</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div><!-- /row -->
+      
+    </div><!-- /row -->
+  </div><!-- /container -->
+
 
  
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
