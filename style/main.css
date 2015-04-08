@@ -191,6 +191,32 @@ i {
 	letter-spacing: 1px;
 }
 
+#footer {
+  height: 60px;
+  background-color: #3B3B3B;
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+
+}
+
+#footer > a {
+    color: #3498db;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+#footer > a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
 
 /*D3 STUFF*/
 
