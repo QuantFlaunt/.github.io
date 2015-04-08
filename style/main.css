@@ -135,7 +135,6 @@ i {
 #about {
   /*background-image: url("photo.jpg");*/
   margin-top: -20px;
-  padding-top:100px;
   min-height: 650px;
   width: 100%;
 
@@ -153,7 +152,6 @@ i {
 #data {
   /*background-image: url("photo.jpg");*/
   margin-top: -20px;
-  padding-top:100px;
   min-height: 650px;
   width: 100%;
 
@@ -171,7 +169,6 @@ i {
 #visualize {
   /*background-image: url("photo.jpg");*/
   margin-top: -20px;
-  padding-top:100px;
   min-height: 650px;
   width: 100%;
 
@@ -194,6 +191,13 @@ i {
 	letter-spacing: 1px;
 }
 
+#footer {
+  height: 60px;
+  background-color: #3B3B3B;
+  margin-top:50px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
 
 
 /*D3 STUFF*/
