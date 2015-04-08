@@ -2,22 +2,21 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link href="img/graph.png" rel="shortcut icon">
-
   <title>QuantFlaunt - Your Life, Quantified</title>
-  <link href="http://static.tumblr.com/w8z8jth/hxXnf5m7d/bootstrap.css" rel="stylesheet">
+
+  <link href="/style/bootstrap.css" rel="stylesheet">
   <link href="/style/main.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
 
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> 
-  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="/js/modernizr.custom.js"></script>
   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <link href="http://static.tumblr.com/w8z8jth/BUDnf5m7n/bootstrap-editable.css" rel="stylesheet">
-  <script src="http://static.tumblr.com/w8z8jth/l5znf5m9e/bootstrap-editable.js"></script>
-  <script src="http://static.tumblr.com/w8z8jth/ifknf5nuw/bootstrap-edit.js"></script>
+  <link href="/style/bootstrap-editable.css" rel="stylesheet">
+  <script src="/js/bootstrap-editable.js"></script>
 
+<!-- Highcharts -->
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/data.js"></script>
   <script src="http://code.highcharts.com/modules/drilldown.js"></script>
@@ -39,7 +38,7 @@
         <button class="navbar-toggle" data-target=".navbar-collapse"
         data-toggle="collapse" type="button"><span class="icon-bar"></span>
         <span class="icon-bar"></span> <span class="icon-bar"></span></button>
-        <a class="navbar-brand" class="smoothScroll" style="font-weight: bold">QUANTFLAUNT</a>
+        <a class="navbar-brand" href="quantflaunt.github.io" class="smoothScroll" style="font-weight: bold">QUANTFLAUNT</a>
       </div>
 
       <div class="navbar-collapse collapse">
@@ -128,7 +127,7 @@
 
     <div class="row mt centered">
       <div class="col-lg-4">
-        <img alt="" src="http://static.tumblr.com/w8z8jth/6usneor0v/online.png" width="180">
+        <img alt="" src="/images/online.png" width="180">
 
         <h4>1 - Curated Social Identity</h4>
 
@@ -138,7 +137,7 @@
       </div><!--/col-lg-4 -->
 
       <div class="col-lg-4">
-        <img alt="" src="http://static.tumblr.com/w8z8jth/LmOneor22/work.png" width="180">
+        <img alt="" src="/images/work.png" width="180">
 
         <h4>2 - Busy Offline Life</h4>
 
@@ -148,7 +147,7 @@
       </div><!--/col-lg-4 -->
 
       <div class="col-lg-4">
-        <img alt="" src="http://static.tumblr.com/w8z8jth/Oconeor2c/sleep.png" width="180">
+        <img alt="" src="/images/sleep.png" width="180">
 
         <h4>3 - None of the Above</h4>
 
@@ -175,7 +174,7 @@
 
     <div class="row mt centered">
       <div class="col-lg-4">
-        <img alt="" class="img-circle" src="http://static.tumblr.com/w8z8jth/cnRneor2o/pic1.jpg" width="140">
+        <img alt="" class="img-circle" src="/images/pic1.jpg" width="140">
 
         <h4>John Roberts</h4>
 
@@ -187,7 +186,7 @@
       </div><!--/col-lg-4 -->
 
       <div class="col-lg-4">
-        <img alt="" class="img-circle" src="http://static.tumblr.com/w8z8jth/DGJneor3h/pic3.jpg" width="140">
+        <img alt="" class="img-circle" src="/images/pic3.jpg" width="140">
 
         <h4>Angelica Fuller</h4>
 
@@ -199,7 +198,7 @@
       </div><!--/col-lg-4 -->
 
       <div class="col-lg-4">
-        <img alt="" class="img-circle" src="http://static.tumblr.com/w8z8jth/K9Qneor31/pic2.jpg" width="140">
+        <img alt="" class="img-circle" src="/images/pic2.jpg" width="140">
 
         <h4>Peter Jane</h4>
 
@@ -227,7 +226,7 @@
 
     <div class="row">
       <div style="float:left" class="col-md-2 col-md-offset-1">
-        <img alt="" class="img-circle" src="http://static.tumblr.com/w8z8jth/DGJneor3h/pic3.jpg" width="140">
+        <img alt="" class="img-circle" src="/images/pic3.jpg" width="140">
 
         <h4 style="text-align: center">Angelica's Data</h4>
 
@@ -325,7 +324,7 @@
 
     <div class="row">
       <div style="float:left" class="col-md-2 col-md-offset-1">
-        <img alt="" class="img-circle" src="http://static.tumblr.com/w8z8jth/cnRneor2o/pic1.jpg" width="140">
+        <img alt="" class="img-circle" src="/images/pic1.jpg" width="140">
 
         <h4 style="text-align: center">John's Number</h4>
 
@@ -345,6 +344,26 @@
 <!-- /Visualization -->
 
 
+<!-- Scripts -->
+<!-- Bootstrap Edit -->
+
+<script type="text/javascript">$('#user').editable({
+  selector: 'a',
+
+  pk: 1
+});
+
+$.fn.editableform.buttons =
+  '<button type="submit" class="btn btn-link editable-submit btn-mini"><i class="glyphicon glyphicon-ok"></i></button>' +
+ '<button type="button" class="btn btn-link editable-cancel btn-mini"><i class="glyphicon glyphicon-remove"></i></button>';
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+<!-- /Bootstrap Edit -->
+
+<!-- Analytics -->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -355,6 +374,7 @@
   ga('send', 'pageview');
 
 </script>
+<!-- /Analytics -->
 
 <!--Data Table -->
 <script type="text/javascript">
