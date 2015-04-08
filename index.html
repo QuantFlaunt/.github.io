@@ -464,28 +464,84 @@ $(function () {
 
 
                             },
-            text: '1',
+            text: '80',
             align: 'left',
             y: 425,
-                    x: 375
+                    x: 365
             },
             tooltip: {
-                valueDecimals: 0,
                 pointFormat: '{series.name}: <b>{point.y}%<\/b>'
-
             },
 
-           
+            drilldown:{
+                drillUpButton: {
+                relativeTo: 'spacingBox',
+                position: {
+                    y: 50,
+                    x: 0
+                            },
+                },
                
-       
-            
+        series: [{
+            id: 'Art',
+            name: 'Art',
+            data: [
+                ['Freelance', 10],
+                ['School', 90],
+            ]
+        }, 
+        {
+            id: 'Body Stuff',
+                name: 'Body Stuff',
+                data: [{
+                name: 'Yawns', 
+                y: 25,
+                drilldown: 'Yawns'
+            },
+                    
+                    ['Panic',       25],
+                    ['Sleep',   25],
+                    ['Eye-roll',   25]
+                 ]
+            }, 
+            {
+            id: 'Yawns',
+            name: 'Yawns',
+            data: [{
+                name: 'Class', 
+                y: 25,
+                drilldown: 'Class'
+            },
+                    ['Train',   25],
+                    ['Walking',   25]
+            ],
+        },
+    {
+            id: 'Class',
+            name: 'Class',
+            data: [
+                ['Foundation', 50],
+                ['Survey', 50],
+        ['Art Seminar', 50]
+            ]
+        }]
+    },
+    
                
       series: [{
         name: 'Identity',
         colorByPoint: true,
         data: [{
+            name: 'Art',
+            y: 25,
+            drilldown: 'Art'
+        }, {
+            name: 'Body Stuff',
+            y: 50,
+            drilldown: 'Body Stuff'
+        }, {
             name: 'Quant',
-            y: 100,
+            y: 25,
             
         }]
       }]
