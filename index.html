@@ -311,5 +311,36 @@
   ga('send', 'pageview');
 
 </script>
+
+<!--Data Table -->
+<script type="text/javascript">
+//apply editable to parent div
+$('#user').editable({
+  selector: 'a',
+  pk: 1
+});
+</script>
+<script>
+//modify buttons style
+$.fn.editableform.buttons =
+  '<button type="submit" class="btn btn-link editable-submit btn-mini"><i class="fa fa-check"></i></button>' +
+ '<button type="button" class="btn btn-link editable-cancel btn-mini"><i class="fa fa-close"></i></button>';
+</script>
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})</script>
+<!-- /Data Table-->
+
+<!-- Edit Button Alert-->
+<script>$(document).ready(function () {
+    $('#warning').click(function (e) {
+  e.preventDefault()
+  $('#message').html('<div class="alert alert-warning fade in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button><strong>Database Error</strong> Too many users updating their identity! Try again later. </div>');
+})
+});
+</script>
+<!-- /Edit Button Alert-->
+
 </body>
 </html>
