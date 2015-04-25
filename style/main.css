@@ -112,8 +112,8 @@ i {
 }
 
 #headerwrap {
-  background-image: url(/images/banner.jpg);
-	/*background-color: #3B3B3B;*/
+	/*background-image: url("photo.jpg");*/
+	background-color: #3B3B3B;
 	margin-top: -20px;
 	padding-top:100px;
 	background-attachment: relative;
