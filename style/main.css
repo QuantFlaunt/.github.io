@@ -112,7 +112,7 @@ i {
 }
 
 #headerwrap {
-  background-image: url(/images/banner.jpg) no-repeat top center;
+  background-image: url(/images/banner.jpg);
 	/*background-color: #3B3B3B;*/
 	margin-top: -20px;
 	padding-top:100px;
