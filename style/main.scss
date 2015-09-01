@@ -69,7 +69,7 @@ p {
 }
 
 a {
-    @mixin transtion;
+    @include transtion;
     color: #3498db;
     word-wrap: break-word;
 
@@ -80,7 +80,7 @@ a {
   }
 
   &:before, &:after {
-    @mixin transtion;
+    @include transtion;
   }
 }
 
@@ -125,7 +125,7 @@ i {
 
 #headerwrap {
   /*background-image: url("photo.jpg");*/
-  @mixin background-size;
+  @include background-size;
   background-color: #3B3B3B;
   margin-top: -20px;
   padding-top:100px;
@@ -146,7 +146,7 @@ i {
 
 #about, #data, #visualize {
   /*background-image: url("photo.jpg");*/
-  @mixin background-size;
+  @include background-size;
   margin-top: 0px;
   min-height: 650px;
   width: 100%;
@@ -162,7 +162,7 @@ i {
 }
 
 #footer > a {
-    @mixin transition;
+    @include transition;
     color: #3498db;
     word-wrap: break-word;
 }
