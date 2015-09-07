@@ -15,12 +15,14 @@
 
   <link href="style/bootstrap-editable.css" rel="stylesheet">
   <script src="js/bootstrap-editable.js"></script>
+  <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
 
 <!-- Highcharts -->
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="http://code.highcharts.com/modules/data.js"></script>
   <script src="http://code.highcharts.com/modules/drilldown.js"></script>
   <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
 
   <script type="text/javascript" src="js/retina.js"></script>
   <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -87,7 +89,27 @@
     </div>
   </div><!--/.Modal -->
 
-  <div id="headerwrap">
+
+
+      <div id="headerwrap">
+        <div class="content-section video-section">
+  <div class="pattern-overlay">
+  <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=bDbgQb5_F1c',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+        <h1>What's your number?</h1>
+        <h2><strong>QuantFlaunt</strong> is an all-in-one library and visualization
+          tool for your curated information offline and across the web</h2>
+     </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- <div id="headerwrap">
     <div class="container">
       <div class="row mt centered">
         <div class="col-lg-6 col-lg-offset-3">
@@ -96,9 +118,9 @@
           <h2><strong>QuantFlaunt</strong> is an all-in-one library and visualization
           tool for your curated information offline and across the web</h2>
         </div><!-- /col-lg-6 -->
-      </div><!-- /row -->
+      <!--</div><!-- /row -->
 
-      <div class="row mt centered">
+     <!-- <div class="row mt centered">
         <div class="col-lg-6 col-lg-offset-3">
           <form class="form-inline">
             <div class="form-group">
@@ -110,7 +132,7 @@
         </div>
       </div>
     </div><!-- /container -->
-  </div><!-- /headerwrap -->
+ <!-- </div><!-- /headerwrap -->
 
   <div id="about">
   <div class="container">
@@ -613,6 +635,12 @@ $(function () {
       Highcharts.setOptions(Highcharts.theme);
       </script>
 <!-- /Chart-->
+
+<script>
+$(document).ready(function () {
+$(".player").mb_YTPlayer();
+});
+</script>
 
 </body>
 </html>
