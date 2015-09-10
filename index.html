@@ -15,7 +15,7 @@
 
   <link href="style/bootstrap-editable.css" rel="stylesheet">
   <script src="js/bootstrap-editable.js"></script>
-  <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+  <script src="js/covervid.min.js"></script>
 
 
   <script src="http://code.highcharts.com/highcharts.js"></script>
@@ -92,9 +92,14 @@
 
 
       <div id="headerwrap">
+        <div class="covervid-wrapper">
+    <video class="covervid-video" autoplay loop poster="images\intro.png">
+        <source src="images/intro.mp4" type="video/mp4">
+    </video>
+</div>
         <div class="content-section video-section">
   <div class="pattern-overlay">
-  <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=RHNkVKJ8gY4',containment:'.video-section', quality:'hd720', autoPlay:true, mute:true, opacity:1, loop:true}">bg</a>
+
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -375,9 +380,7 @@ $(function () {
 
 
 <script>
-$(document).ready(function () {
-$(".player").mb_YTPlayer();
-});
+$('.covervid-video').coverVid(1920, 1080);
 </script>
 
 

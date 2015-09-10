@@ -1,11 +1,11 @@
-/* Variables */
+//Variables
 $background-color: #ecf0f1;
 $transition: #3498db;
 $header-background: #3b3b3b;
 $header-color: #333;
 
 
-/* Mixins */
+//Mixins
 @mixin font-family {
  font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -38,7 +38,7 @@ $header-color: #333;
   width: 100%;
 }
 
-/* Styles */
+//Styles
 body {
   @include font-family;
   background-color: $background-color;
@@ -46,7 +46,7 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-/* Titles */
+//Titles
 h1, h2, h3, h4, h5, h6 {
   @include font-family;
     color: $header-color;
@@ -134,7 +134,7 @@ i {
 }
 
 #headerwrap {
-  /*background-image: url("photo.jpg");*/
+  //background-image: url("photo.jpg");
   @include background-size;
   @include margin;
   background-color: $header-background;
@@ -144,19 +144,16 @@ i {
 }
 
 #about {
-  /*background-image: url("photo.jpg");*/
   @include background-size;
   @include margin;
 }
 
 #data {
-  /*background-image: url("photo.jpg");*/
   @include background-size;
   @include margin;
 }
 
 #visualize {
-  /*background-image: url("photo.jpg");*/
   @include background-size;
   @include margin;
 }
@@ -192,7 +189,6 @@ a:focus {
 
 
 .video-section .pattern-overlay {
-/*background-image: url("photo.jpg");*/
 @include background-size;
   @include margin;
   background-color: rgba(59, 59, 59, .5);
@@ -203,7 +199,7 @@ min-height: 496px;
  margin-top: -20px;
   min-height: 650px;
   width: 100%;
-/* Incase of overlay problems just increase the min-height*/
+// Incase of overlay problems just increase the min-height
 }
 
 .video-section h1, .video-section h2{
@@ -234,8 +230,15 @@ margin: 0px auto 15px;
 .video-section .buttonBar{display:none;}
 .player {font-size: 1px;}
 
+.covervid-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
-/*D3 STUFF*/
+//D3 STUFF
 
 .axis path,
 .axis line {
@@ -278,7 +281,7 @@ margin: 0px auto 15px;
   border-radius: 2px;
 }
 
-/* Creates a small triangle extender for the tooltip */
+//Creates a small triangle extender for the tooltip
 .d3-tip:after {
   box-sizing: border-box;
   display: inline;
@@ -291,7 +294,7 @@ margin: 0px auto 15px;
   text-align: center;
 }
 
-/* Style northward tooltips differently */
+// Style northward tooltips differently
 .d3-tip.n:after {
   margin: -1px 0 0 0;
   top: 100%;
