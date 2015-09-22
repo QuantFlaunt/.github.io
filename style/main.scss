@@ -47,7 +47,7 @@ body {
 }
 
 //Titles
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
   @include font-family;
     color: $header-color;
 }
@@ -90,9 +90,6 @@ a {
     text-decoration: none;
     outline: 0;
     }
-  &:before, &:after {
-  @include transition;
-  }
 }
 
  hr {
@@ -173,21 +170,6 @@ i {
   padding: 0 20px 0 20px;
 }
 
-#footer > a {
-    @include transition;
-    color: $transition;
-    word-wrap: break-word;
-}
-
-#footer > a:hover,
-a:focus {
-    color: #7b7b7b;
-    text-decoration: none;
-    outline: 0;
-}
-
-
-
 .video-section .pattern-overlay {
 @include background-size;
   @include margin;
@@ -227,9 +209,6 @@ font-weight:lighter;
 margin: 0px auto 15px;
 }
 
-.video-section .buttonBar{display:none;}
-.player {font-size: 1px;}
-
 .covervid-wrapper {
     position: absolute;
     top: 0;
@@ -238,70 +217,4 @@ margin: 0px auto 15px;
     height: 100%;
 }
 
-//D3 STUFF
 
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.bar {
-  fill: orange;
-}
-
-.solidArc:hover {
-  fill: orangered ;
-}
-
-.solidArc {
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.x.axis path {
-  display: none;
-}
-
-.aster-score {
-  line-height: 1;
-  font-weight: bold;
-  font-size: 500%;
-}
-
-.d3-tip {
-  line-height: 1;
-  font-weight: bold;
-  padding: 12px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  border-radius: 2px;
-}
-
-//Creates a small triangle extender for the tooltip
-.d3-tip:after {
-  box-sizing: border-box;
-  display: inline;
-  font-size: 10px;
-  width: 100%;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
-  content: "\25BC";
-  position: absolute;
-  text-align: center;
-}
-
-// Style northward tooltips differently
-.d3-tip.n:after {
-  margin: -1px 0 0 0;
-  top: 100%;
-  left: 0;
-}
-
-
-.mydiv {
-    padding: 100px, 0px;
-}
